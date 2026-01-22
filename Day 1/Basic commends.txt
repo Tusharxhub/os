@@ -1,0 +1,58 @@
+
+📁 File & Directory Commands
+
+ls – show files and folders
+pwd – show current location
+cd – change directory
+mkdir – create a new folder
+rmdir – delete an empty folder
+cp – copy files or folders
+mv – move or rename files
+rm – delete files or folders
+
+
+📄 File Viewing & Editing
+
+cat – show file content
+less – view large files page by page
+more – view file step by step
+nano – simple text editor
+vi / vim – advanced text editor
+touch – create an empty file
+
+
+🔍 Search & Information
+
+find – search for files
+grep – search text inside files
+history – show used commands
+man – command manual/help
+
+
+⚙️ System & Process Commands
+
+top – show running processes
+ps – show process status
+kill – stop a process
+df – disk space usage
+free – memory usage
+uptime – system running time
+
+
+👤 User & Permission Commands
+
+whoami – show current user
+chmod – change file permission
+
+chown – change file owner
+su – switch user
+sudo – run command as admin
+
+
+🌐 Network Commands
+
+ping – check internet/server
+ifconfig / ip – network info
+ssh – connect to remote system
+wget – download from internet
+
