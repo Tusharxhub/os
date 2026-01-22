@@ -5,3 +5,6 @@ a.out
 *.exe
 *.bin
 *.elf
+
+# Build output
+output/
