@@ -1,5 +1,5 @@
-#!  wap a shell program  to display Sum of two numbers.
-#!/usr/bin/env bash
+# !  wap a shell program  to display Sum of two numbers.
+
 
 read -r -p "Enter two numbers: " a b
 

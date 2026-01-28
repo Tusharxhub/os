@@ -1,5 +1,5 @@
 # !  wap in shell to display the largest between two number using if else.
-#!/usr/bin/env bash
+
 
 read -r -p "Enter two numbers: " num1 num2
 

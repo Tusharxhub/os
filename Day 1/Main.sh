@@ -1,5 +1,5 @@
-#!/bin/bash
-# wap in shell to see the number is even or odd.
+
+# ! wap in shell to see the number is even or odd.
 
 
 
