@@ -2,11 +2,7 @@
 
 
 read -r -p "Enter two numbers: " num1 num2
-
-if [[ -z "$num1" || -z "$num2" ]]; then
-    echo "Please enter two numbers."
-    exit 1
-fi
+[[ -z "$num1" || -z "$num2" ]] && { echo "Please enter two numbers."; exit 1; }
 
 if [[ "$num1" -gt "$num2" ]]; then
     echo "$num1 is the largest number."
@@ -32,4 +28,4 @@ fi
 #*    Enter two numbers: 30 10
 #*    30 is the largest number.
 #*    Enter two numbers: 20 20
-#*    Both numbers are equal.  
+#*    Both numbers are equal.
