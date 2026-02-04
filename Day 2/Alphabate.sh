@@ -1,4 +1,4 @@
-# ! wap to check whether a character is a Vowel or Consonant.
+# ! wap in shell to check whether a character is a Vowel or Consonant.
 
 read -r -p "Enter a character: " char
 if [[ -z "$char" ]]; then

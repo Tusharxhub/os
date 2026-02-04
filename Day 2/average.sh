@@ -1,19 +1,9 @@
-# !  wap i shell to find The average of three float number .
+# !  wap in shell to find The average of three float number .
 
-read -r -p "Enter three float numbers: " a b c
-if [[ -z "$a" || -z "$b" || -z "$c" ]]; then
-    echo "Please enter three float numbers."
-    exit 1
-fi
-
-if ! [[ $a =~ ^-?[0-9]+(\.[0-9]+)?$ && $b =~ ^-?[0-9]+(\.[0-9]+)?$ && $c =~ ^-?[0-9]+(\.[0-9]+)?$ ]]; then
-    echo "Invalid input. Please enter valid float numbers."
-    exit 1
-fi
-
-average=$(printf '%s
-' "scale=4; ($a + $b + $c) / 3" | bc)
-echo "Average of $a, $b and $c is $average"
+read -r -p "Enter three float numbers: " a b c || exit 1
+[[ $a =~ ^-?[0-9]+(\.[0-9]+)?$ && $b =~ ^-?[0-9]+(\.[0-9]+)?$ && $c =~ ^-?[0-9]+(\.[0-9]+)?$ ]] || { echo "Invalid input."; exit 1; }
+avg=$(echo "scale=4; ($a+$b+$c)/3" | bc)
+echo "Average of $a, $b and $c is $avg"
 
 
 
