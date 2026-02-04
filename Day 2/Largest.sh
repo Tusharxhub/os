@@ -1,17 +1,10 @@
 # ! Wap in shell to find largest among three numbers.
 
 read -r -p "Enter three numbers: " a b c
-if [[ -z "$a" || -z "$b" || -z "$c" ]]; then
-    echo "Please enter three numbers."
-    exit 1
-fi
+[[ -z $a || -z $b || -z $c ]] && { echo "Please enter three numbers."; exit 1; }
 largest=$a
-if [[ "$b" -gt "$largest" ]]; then
-    largest=$b
-fi  
-if [[ "$c" -gt "$largest" ]]; then
-    largest=$c
-fi
+(( b > largest )) && largest=$b
+(( c > largest )) && largest=$c
 echo "The largest number among $a, $b and $c is $largest"
 
 

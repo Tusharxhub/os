@@ -1,20 +1,13 @@
 # ! wap in shell to find a person is eligible for job or not.
 
 read -r -p "Enter your age: " age
-if [[ -z "$age" ]]; then    
-    echo "Please enter your age."
-    exit 1
-fi
-if ! [[ $age =~ ^[0-9]+$ ]]; then
+if ! [[ "$age" =~ ^[0-9]+$ ]]; then
     echo "Invalid input. Please enter a valid age."
     exit 1
 fi
-if [ "$age" -ge 21 ]; then
-    if [ "$age" -le 60 ]; then
-        echo "You are eligible for the job."
-    else
-        echo "You are not eligible for the job."
-    fi
+
+if (( age >= 21 && age <= 60 )); then
+    echo "You are eligible for the job."
 else
     echo "You are not eligible for the job."
 fi

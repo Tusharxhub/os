@@ -1,19 +1,8 @@
 # ! wap in shell to check whether a person is eligible for Voting.
 
 read -r -p "Enter your age: " age
-if [[ -z "$age" ]]; then
-    echo "Please enter your age."
-    exit 1
-fi
-if ! [[ $age =~ ^[0-9]+$ ]]; then
-    echo "Invalid input. Please enter a valid age."
-    exit 1
-fi
-if (( age >= 18 )); then
-    echo "You are eligible to vote."
-else
-    echo "You are not eligible to vote."
-fi
+[[ $age =~ ^[0-9]+$ ]] || { echo "Invalid input. Please enter a valid age."; exit 1; }
+(( age >= 18 )) && echo "You are eligible to vote." || echo "You are not eligible to vote."
 
 
 #?    How to compile and run the code

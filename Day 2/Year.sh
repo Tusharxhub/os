@@ -1,14 +1,7 @@
 # ! wap in shell to check whether the year is leap year or not.
 
 read -r -p "Enter a year: " year
-if [[ -z "$year" ]]; then
-    echo "Please enter a valid year."
-    exit 1
-fi 
-if ! [[ $year =~ ^[0-9]+$ ]]; then
-    echo "Invalid input. Please enter a valid year."
-    exit 1
-fi
+[[ $year =~ ^[0-9]+$ ]] || { echo "Invalid input. Please enter a valid year."; exit 1; }
 if (( (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0) )); then
     echo "$year is a leap year."
 else
