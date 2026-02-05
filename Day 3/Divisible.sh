@@ -1,0 +1,1 @@
+# ! wap in shell to print all number divisible by 5 and 7 form 50 to 100.
