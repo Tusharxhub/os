@@ -1,0 +1,1 @@
+# !   wap in shell to print all even number divisible by 5 from 50 to 100.

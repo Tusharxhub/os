@@ -1,0 +1,1 @@
+# !  wap in shell to find factorial of a number.
