@@ -19,20 +19,20 @@ https://github.com/Tusharxhub/Operating_system
 | Technology / Tool              | Purpose                                      |
 |-------------------------------|----------------------------------------------|
 | 🐧 **Linux (Fedora / Ubuntu)** | Primary operating system for experiments     |
-| 💻 **GCC Compiler**           | Compiling C programs                         |
 | 🧾 **Shell (Bash / Zsh)**     | Script execution and automation              |
 | 📟 **Terminal Utilities**     | Process, memory, and system inspection       |
-| 🧠 **C Language**             | Low-level OS-related programming             |
+| 🔢 **bc (Basic Calculator)**  | Floating-point arithmetic in shell scripts   |
 
 ---
 
 ## ✨ Key Concepts Covered
 
-- ⚙️ Process creation and execution  
-- 🧮 CPU scheduling fundamentals  
-- 🧠 Memory management basics  
-- 📁 File handling and permissions  
 - 🧾 Shell scripting and automation  
+- 🔀 Conditional statements (`if-else`, `case`)  
+- 🔁 Looping constructs (`for`, `while`)  
+- 🧮 Arithmetic and floating-point operations  
+- ✅ Input validation and error handling  
+- 📁 File handling and permissions  
 - 🔍 Linux commands and system utilities  
 - 🧪 OS lab-style experiments  
 
@@ -40,20 +40,72 @@ Each program is designed to connect **theory with real system behavior**.
 
 ---
 
-## 📁 Project Structure – Clean & Organized
+## 📁 Project Structure
 
-```bash
+```
 Operating_system/
-├── Day 1/                 # Introductory OS experiments
-│   ├── source/            # Source code files
-│   └── output/            # Compiled binaries
-├── Day 2/                 # Advanced concepts
-├── shell_scripts/         # Shell scripting examples
-├── .gitignore
-└── README.md
-````
+├── .gitignore                      # Ignores compiled binaries & build output
+├── README.md
+├── Day 1/                          # Basics – Commands & Simple Scripts
+│   ├── Basic commends.txt          # Linux command reference guide
+│   ├── Main.sh                     # Check even or odd
+│   ├── Number.sh                   # Largest of two numbers
+│   └── Sum.sh                      # Sum of two numbers
+├── Day 2/                          # Conditionals & Real-World Logic
+│   ├── Alphabate.sh                # Vowel or consonant checker
+│   ├── average.sh                  # Average of three float numbers
+│   ├── circle.sh                   # Area of a circle
+│   ├── Interest.sh                 # Simple interest calculator
+│   ├── Job.sh                      # Job eligibility by age
+│   ├── Largest.sh                  # Largest of three numbers
+│   ├── Voting.sh                   # Voting eligibility checker
+│   └── Year.sh                     # Leap year checker
+└── Day 3/                          # Loops & Number Theory
+    ├── Divisible.sh                # Numbers divisible by 5 and 7 (50–100)
+    ├── Even.sh                     # Even numbers divisible by 5 (50–100)
+    ├── Factorial.sh                # Factorial of a number
+    ├── Number.sh                   # Print numbers 1 to N
+    └── Prime.sh                    # Prime number checker
+```
 
-*Structure expands as new lab work is added.*
+> **17 shell scripts** across 3 days + 1 command reference file.  
+> *Structure expands as new lab work is added.*
+
+---
+
+## 📋 Script Summary
+
+### Day 1 – Basics & Simple Scripts
+
+| Script | Description |
+|--------|-------------|
+| `Basic commends.txt` | Quick reference for essential Linux commands (file, directory, search, system, permissions) |
+| `Main.sh` | Check whether a number is even or odd |
+| `Number.sh` | Find the largest of two numbers |
+| `Sum.sh` | Calculate the sum of two numbers |
+
+### Day 2 – Conditionals & Real-World Logic
+
+| Script | Description |
+|--------|-------------|
+| `Alphabate.sh` | Check whether a character is a vowel or consonant |
+| `average.sh` | Calculate the average of three float numbers |
+| `circle.sh` | Calculate the area of a circle given its radius |
+| `Interest.sh` | Calculate simple interest (P × R × T / 100) |
+| `Job.sh` | Check job eligibility based on age (21–60) |
+| `Largest.sh` | Find the largest among three numbers |
+| `Voting.sh` | Check voting eligibility (age ≥ 18) |
+| `Year.sh` | Check whether a year is a leap year |
+
+### Day 3 – Loops & Number Theory
+
+| Script | Description |
+|--------|-------------|
+| `Divisible.sh` | Print all numbers divisible by 5 and 7 from 50 to 100 |
+| `Even.sh` | Print all even numbers divisible by 5 from 50 to 100 |
+| `Factorial.sh` | Calculate the factorial of a given number |
+| `Number.sh` | Print numbers from 1 to N |
+| `Prime.sh` | Check whether a number is prime |
 
 ---
 
@@ -63,9 +115,9 @@ Operating_system/
 
 Make sure you have:
 
-* Linux-based OS
-* GCC compiler
+* Linux-based OS (Fedora / Ubuntu recommended)
 * Bash or Zsh shell
+* `bc` calculator (for float arithmetic scripts — install via `sudo apt install bc` or `sudo dnf install bc`)
 * Basic terminal knowledge
 
 ---
@@ -82,47 +134,49 @@ cd Operating_system
 
 ## ▶️ How to Run Programs
 
-### Compile and Run C Programs
-
-```bash
-gcc program.c -o program
-./program
-```
-
 ### Run Shell Scripts
 
 ```bash
-chmod +x script.sh
-./script.sh
+# Make the script executable (one-time)
+chmod +x "Day 1/Main.sh"
+
+# Run it
+bash "Day 1/Main.sh"
 ```
 
 ---
 
 ## 🖥️ Example Output
 
-### Example: Running a C Program
+### Even / Odd Check (Day 1)
 
 ```bash
-$ ./Main
-Enter an integer: 4
-Output: 16
+$ bash "Day 1/Main.sh"
+Enter an integer: 7
+7 is odd.
 ```
 
-### Example: Shell Script Execution
+### Leap Year Check (Day 2)
 
 ```bash
-$ ./process_check.sh
-Process started successfully
-PID: 2154
+$ bash "Day 2/Year.sh"
+Enter a year: 2024
+2024 is a leap year.
 ```
 
-These outputs help verify correct execution and improve understanding of OS-level behavior.
+### Prime Number Check (Day 3)
+
+```bash
+$ bash "Day 3/Prime.sh"
+Enter a number: 13
+13 is a prime number.
+```
 
 ---
 
 ## 📖 Learning Approach
 
-* Read inline comments carefully
+* Read inline comments carefully — each script documents its purpose and usage
 * Modify inputs to observe behavior changes
 * Use tools like `top`, `htop`, `ps`, and `strace`
 * Compare outcomes with OS theory
@@ -156,5 +210,5 @@ For questions, feedback, or collaboration:
 
 ## ⭐ Final Note
 
-This repository is maintained for **academic excellence and practical OS understanding**.
+This repository is maintained for **academic excellence and practical OS understanding**.  
 If you find it useful, consider giving it a ⭐ on GitHub.
