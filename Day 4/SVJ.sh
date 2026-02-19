@@ -1,4 +1,4 @@
-# !     Process                   B.Time          FCFS/SJF
+# !     Process                   B.Time 
 # !      A                          5
 # !      B                          4
 # !      C                          2
