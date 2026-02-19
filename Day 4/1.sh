@@ -1,3 +1,5 @@
+# ! wap in shell to solve the problem.
+
 # !     Process                   B.Time 
 # !      A                          5
 # !      B                          4
@@ -41,9 +43,9 @@ calc "SJF" sb sp
 # *    2. Navigate to the directory where the 1.sh file is located.
 # *    3. Make sure the script has execute permissions. You can set the permissions
 # *       using the command:
-# *       chmod +x "Day 4/SVJ.sh"
+# *       chmod +x "Day 4/1.sh"
 # *    4. Run the script using the command:
-# *       "Day 4/SVJ.sh"
+# *       "Day 4/1.sh"
 # *    5. The output will display the scheduling results for both FCFS and SJF algorithms, including the average waiting time and average turnaround time for each scheduling method.
 # ?    Example Output
 # *    =========================================
