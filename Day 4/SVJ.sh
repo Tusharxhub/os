@@ -34,3 +34,39 @@ for ((i=0;i<n-1;i++)); do
 done
 echo ""
 calc "SJF" sb sp
+
+
+# ?    How to compile and run the code
+# *    1. Open your terminal.
+# *    2. Navigate to the directory where the 1.sh file is located.
+# *    3. Make sure the script has execute permissions. You can set the permissions
+# *       using the command:
+# *       chmod +x "Day 4/SVJ.sh"
+# *    4. Run the script using the command:
+# *       "Day 4/SVJ.sh"
+# *    5. The output will display the scheduling results for both FCFS and SJF algorithms, including the average waiting time and average turnaround time for each scheduling method.
+# ?    Example Output
+# *    =========================================
+# *            FCFS (First Come First Served)
+# *    =========================================
+# *    Process   B.T   W.T   T.A.T
+# *    ---------+-----+-----+------
+# *       A       5     0     5
+# *       B       4     5     9
+# *       C       2     9     11 
+# *       D       6     11    17
+# *    ---------+-----+-----+------
+# *    Avg W.T  = 25 / 4 = 6.25 
+# *    Avg T.A.T= 42 / 4 = 10.50
+# *    =========================================
+# *            SJF (Shortest Job First)
+# *    =========================================
+# *    Process   B.T   W.T   T.A.T
+# *    ---------+-----+-----+------
+# *       C       2     0     2
+# *       B       4     2     6
+# *       A       5     6     11
+# *       D       6     11    17
+# *    ---------+-----+-----+------
+# *    Avg W.T  = 19 / 4 = 4.75
+# *    Avg T.A.T= 36 / 4 = 9.00
